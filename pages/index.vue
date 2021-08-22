@@ -1,5 +1,5 @@
 <template>
-  <div :hoge="hoge">{{ contents }}{{ axles }}</div>
+  <div>{{ contents }}{{ axles }}</div>
 </template>
 
 <script lang="ts">
