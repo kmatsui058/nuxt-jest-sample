@@ -5,7 +5,7 @@
 <script lang="ts">
 import { defineComponent, computed, useAsync } from '@nuxtjs/composition-api'
 import { authStore } from '~/store'
-
+import '~/assets/scss/hoge.scss'
 export default defineComponent({
   name: 'IndexPageComponent',
   setup() {
@@ -21,3 +21,9 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.name {
+  margin: 10px;
+}
+</style>
