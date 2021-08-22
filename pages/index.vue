@@ -1,29 +1,31 @@
 <template>
-  <div>{{ contents }}{{ axles }}</div>
+  <div class="name">{{ name }}</div>
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
 import {
   defineComponent,
   Ref,
   ref,
-  useContext,
   useFetch,
+  computed,
 } from '@nuxtjs/composition-api'
-import { mymoduleStore } from '~/store'
+import { UserData } from '~/oas'
+import { authStore } from '~/store'
 
 export default defineComponent({
   name: 'IndexPageComponent',
   setup() {
-    const context = useContext()
-    const axles = mymoduleStore.axles
-    const contents: Ref<null | IContentDocument | IContentDocument[]> =
-      ref(null)
-    useFetch(async () => {
-      contents.value = await context.$content().fetch()
+    const self: Ref<null | UserData> = ref(null)
+    const { fetch } = useFetch(async () => {
+      await authStore.fetchSelf()
+      self.value = authStore.getSelf
     })
-    return { contents, axles }
+    fetch()
+    const name = computed(() => {
+      return self.value?.name
+    })
+    return { name, fetch }
   },
 })
 </script>
