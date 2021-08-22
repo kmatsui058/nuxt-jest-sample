@@ -11,7 +11,8 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "prepare": "husky install",
     "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest"
+    "test": "jest",
+    "oas": "openapi-generator-cli generate --enable-post-process-file -i ./openapi.yaml -o ./oas --generator-name typescript-axios -c ./openapi-config.yaml"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -22,6 +23,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/composition-api": "^0.27.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "@openapitools/openapi-generator-cli": "^2.3.10",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "vuex-module-decorators": "^1.0.1"
