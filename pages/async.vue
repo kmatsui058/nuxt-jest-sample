@@ -7,7 +7,7 @@ import { defineComponent, computed, useAsync } from '@nuxtjs/composition-api'
 import { authStore } from '~/store'
 import '~/assets/scss/hoge.scss'
 export default defineComponent({
-  name: 'IndexPageComponent',
+  name: 'AsyncPageComponent',
   setup() {
     const fetch = async () => {
       await authStore.fetchSelf()

@@ -70,7 +70,23 @@ paths:
                 type: array
                 items:
                   $ref : '#/components/schemas/ProjectItem'
-
+              example:
+                - archived: false
+                  chartEnabled: false
+                  id: 1
+                  name: テストプロジェクト
+                  projectKey: TEST
+                  projectLeaderCanEditProjectLeader: false
+                  subtaskingEnabled: false
+                  textFormattingRule: markdown
+                - archived: false
+                  chartEnabled: false
+                  id: 2
+                  name: テストプロジェクト2
+                  projectKey: TEST2
+                  projectLeaderCanEditProjectLeader: false
+                  subtaskingEnabled: false
+                  textFormattingRule: markdown
 components:
   schemas:
     ProjectItem:
@@ -79,7 +95,7 @@ components:
           archived: false
           chartEnabled: false
           id: 1
-          name: test
+          name: テストプロジェクト
           projectKey: TEST
           projectLeaderCanEditProjectLeader: false
           subtaskingEnabled: false
