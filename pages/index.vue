@@ -9,6 +9,7 @@ import {
   ref,
   useFetch,
   computed,
+  useStore,
 } from '@nuxtjs/composition-api'
 import { UserData } from '~/oas'
 import { authStore } from '~/store'
@@ -25,7 +26,9 @@ export default defineComponent({
     const name = computed(() => {
       return self.value?.name
     })
-    return { name, fetch }
+    const store = useStore()
+    const axels = store.getters['mymodule/axels']
+    return { name, fetch, axels }
   },
 })
 </script>
