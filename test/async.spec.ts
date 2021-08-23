@@ -10,9 +10,9 @@ describe('async page', () => {
   describe('async', () => {
     test('async page', async () => {
       const wrapper = mount(async)
-      const nameElement = wrapper.find('div.name').element
       const data = await (wrapper as any).vm.fetch()
       wrapper.vm.$data.value = data
+      const nameElement = wrapper.find('div.name').element
       expect(nameElement.innerHTML).toBe('admin')
     })
   })
