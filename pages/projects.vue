@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent, useFetch } from '@nuxtjs/composition-api'
-import Projects from '~/components/Projects.vue'
+import Projects from '~/components/ProjectsComponent.vue'
 import { authStore } from '~/store'
 import '~/assets/scss/hoge.scss'
 export default defineComponent({
