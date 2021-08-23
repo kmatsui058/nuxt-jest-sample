@@ -5,9 +5,12 @@ describe('mymodule store', () => {
     initialiseStores(createStore())
   })
   describe('mutations', () => {
-    test('add extra wheels', () => {
+    test('２追加して４になる', () => {
       mymoduleStore.incrWheels(2)
       expect(mymoduleStore.axles).toBe(2)
+    })
+    test('初期値に戻ってるか確認', () => {
+      expect(mymoduleStore.axles).toBe(1)
     })
   })
 })
