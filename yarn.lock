@@ -1737,16 +1737,16 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
-"@openapitools/openapi-generator-cli@^2.3.10":
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/@openapitools/openapi-generator-cli/-/openapi-generator-cli-2.3.10.tgz#c30ff4e85a48682432c793a6450b2d2422bee82c"
-  integrity sha512-S9cyk6W6vJigiZv7kpoeXF8hWT6kx6iFb14onH64AKJdYfbr8vz9e48YC+C9heFi2dF5ThDGvL3RGTox+V6O1g==
+"@openapitools/openapi-generator-cli@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@openapitools/openapi-generator-cli/-/openapi-generator-cli-2.4.1.tgz#a47ce2b93c268f6b55b33ee3d8b6bad1bcec8917"
+  integrity sha512-3AX0WyhEtFM/ZWImJ2u5SUWV0aCgDNde5P1sNso2oW1IbF7ylM86T9aL8RK560hymeiRQVuSpYtxLSB/N6vpOg==
   dependencies:
     "@nestjs/common" "7.6.18"
     "@nestjs/core" "7.6.18"
     "@nuxtjs/opencollective" "0.3.2"
     chalk "4.1.2"
-    commander "6.2.1"
+    commander "8.1.0"
     compare-versions "3.6.0"
     concurrently "6.2.1"
     console.table "0.10.0"
@@ -3892,10 +3892,10 @@ comma-separated-tokens@^1.0.0:
   resolved "https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-1.0.8.tgz"
   integrity sha512-GHuDRO12Sypu2cV70d1dkA2EUmXHgntrzbpvOB+Qy+49ypNfGgFQIC2fhhXbnyrJRynDCAARsT7Ou0M6hirpfw==
 
-commander@6.2.1, commander@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz"
-  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
+commander@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-8.1.0.tgz#db36e3e66edf24ff591d639862c6ab2c52664362"
+  integrity sha512-mf45ldcuHSYShkplHHGKWb4TrmwQadxOn7v4WuhDJy0ZVoY5JFajaRDKD0PNe5qXzBX0rhovjTnP6Kz9LETcuA==
 
 commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
@@ -3906,6 +3906,11 @@ commander@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
+
+commander@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz"
+  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
 commander@^7.2.0:
   version "7.2.0"
